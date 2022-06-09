@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: auto;
+    font-family: sans-serif;
+}
+
+.conteneur {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(206, 40, 50);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 3em;
+    letter-spacing: 0.1em;
+     text-shadow: 2px 2px 8px #000000;
+    padding: 20px;
+}
+
+.resume {
+    font-style: italic;
+    letter-spacing: 0.1em;
+}
+.regles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.partie {
+    position: relative;
+    width: 80%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    border: 2px black solid;
+    transition: all 1s;
+}
+
+.name {
+    font-size: 2em;
+    z-index: 4;
+    padding: 80px;
+}
+
+.name2 {
+    right: 0;
+    font-size: 2em;
+    z-index: 4;
+    padding: 80px;
+}
+
+.partie>ul {
+    position: absolute;
+    font-size: 1.6em;
+    color: white;
+    left : 0;
+}
+
+ul {
+    list-style-type: none;
+    line-height: 1.4em;
+    padding-left: 50px;
+}
+
+
+ul>li::first-letter {
+    text-transform: uppercase;
+}
+
+ul>li {
+    margin: 10px;
+    margin-left: 0;
+    padding: 10px;
+}
+
+.partie>.ul2 {
+color: black;
+position: absolute;
+right: 0;   
+}
+
+.partie>ul>li:hover
+{
+color: black;
+background-color: #ffffff;
+border-radius: 10px;
+transition: background-color 1s, color 1s;
+}
+
+.partie {
+    background-color: white;
+    color: black;
+    box-shadow: inset 0 0 0 0.09px white;
+ }
+ 
+ .partie:hover {
+     box-shadow: inset 700px 0 0 0 black;
+     padding-left: 700px;
+     transition: box-shadow 1s, padding-left 1s;
+ }
+
